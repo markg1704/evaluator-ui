@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'evaluator-ui';
+
+  constructor(private modalService: NgbModal) {}
+
+  public onShowAbout(aboutModal: any): void {
+    this.modalService.open(aboutModal, { ariaLabelledBy: 'modal-basic-title' })
+  }
 
   public isUser(): boolean {
     // TODO - logic here
