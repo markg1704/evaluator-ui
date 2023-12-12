@@ -1,0 +1,7 @@
+#mapView {
+    background-color: #d9deda;
+    position: absolute;
+    top: 10vh;
+    bottom: 0;
+    width: 100%;
+}
